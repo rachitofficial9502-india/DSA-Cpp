@@ -1,3 +1,19 @@
+/* 
+Painter’s Partition Problem (Simplified)
+
+You are given:
+An array boards[] where boards[i] is the length of the i-th board
+An integer k = number of painters
+
+Rules:
+Each painter paints contiguous boards
+Each painter paints at the same speed
+A board cannot be split
+All painters work in parallel
+
+Goal:
+Find the minimum time required to paint all boards. */
+
 #include <iostream>
 
 bool canPaint(int boards[], int mid, int size, int k) {
@@ -60,4 +76,5 @@ int main() {
     std::cout << "Minimum time needed is : " << result << std::endl;
 
     return 0;
+
 }
